@@ -1,0 +1,15 @@
+body {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.App {
+  margin: 0;
+  padding: 1%;
+  text-align: center;
+}
+
+
+  

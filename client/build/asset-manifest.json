@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/carellomartino/MYtinerary/static/css/main.1329983f.chunk.css",
+    "main.js": "/carellomartino/MYtinerary/static/js/main.4cdf1fbb.chunk.js",
+    "main.js.map": "/carellomartino/MYtinerary/static/js/main.4cdf1fbb.chunk.js.map",
+    "runtime-main.js": "/carellomartino/MYtinerary/static/js/runtime-main.82ab9b80.js",
+    "runtime-main.js.map": "/carellomartino/MYtinerary/static/js/runtime-main.82ab9b80.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/carellomartino/MYtinerary/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.b93f6eb7.chunk.js": "/carellomartino/MYtinerary/static/js/2.b93f6eb7.chunk.js",
+    "static/js/2.b93f6eb7.chunk.js.map": "/carellomartino/MYtinerary/static/js/2.b93f6eb7.chunk.js.map",
+    "index.html": "/carellomartino/MYtinerary/index.html",
+    "precache-manifest.b1f2b782e22a740da36740cc74ae4037.js": "/carellomartino/MYtinerary/precache-manifest.b1f2b782e22a740da36740cc74ae4037.js",
+    "service-worker.js": "/carellomartino/MYtinerary/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/carellomartino/MYtinerary/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.1329983f.chunk.css.map": "/carellomartino/MYtinerary/static/css/main.1329983f.chunk.css.map",
+    "static/media/MYtineraryLogo.svg": "/carellomartino/MYtinerary/static/media/MYtineraryLogo.dd247af8.svg",
+    "static/media/amsterdam.jpg": "/carellomartino/MYtinerary/static/media/amsterdam.97fb6201.jpg",
+    "static/media/athens.jpg": "/carellomartino/MYtinerary/static/media/athens.d6a6fb86.jpg",
+    "static/media/barcelona.jpg": "/carellomartino/MYtinerary/static/media/barcelona.be38003f.jpg",
+    "static/media/circled-right-2.png": "/carellomartino/MYtinerary/static/media/circled-right-2.16fd0ef3.png",
+    "static/media/london.jpg": "/carellomartino/MYtinerary/static/media/london.2dc8e201.jpg",
+    "static/media/mexico.jpg": "/carellomartino/MYtinerary/static/media/mexico.8d43d9b0.jpg",
+    "static/media/montevideo.jpg": "/carellomartino/MYtinerary/static/media/montevideo.fda4000c.jpg",
+    "static/media/newYork.jpg": "/carellomartino/MYtinerary/static/media/newYork.aafdfd5a.jpg",
+    "static/media/paris.jpg": "/carellomartino/MYtinerary/static/media/paris.9fae9896.jpg",
+    "static/media/prague.jpg": "/carellomartino/MYtinerary/static/media/prague.09f837cf.jpg",
+    "static/media/rio.jpg": "/carellomartino/MYtinerary/static/media/rio.d6a3774c.jpg",
+    "static/media/roma.jpg": "/carellomartino/MYtinerary/static/media/roma.314c2480.jpg",
+    "static/media/tokyo.jpg": "/carellomartino/MYtinerary/static/media/tokyo.b5f9ef4b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82ab9b80.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.b93f6eb7.chunk.js",
+    "static/css/main.1329983f.chunk.css",
+    "static/js/main.4cdf1fbb.chunk.js"
+  ]
+}

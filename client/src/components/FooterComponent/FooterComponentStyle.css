@@ -1,0 +1,15 @@
+body {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.footer {
+    margin-top: 2%;
+  }
+  
+  .homeIcon {
+    height: 3%;
+    width: 3%;
+  }

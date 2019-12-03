@@ -1,0 +1,49 @@
+.flex-separated {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburguerIcon {
+  width: 10px;
+  height: 10px;
+}
+
+.button {
+  width: 55px;
+  height: 55px;
+}
+
+.user-img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  color: red;
+}
+
+.general {
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.navDown {
+  background-color: white;
+}
+
+.round {
+  border-radius: 25%;
+}
+
+.modal2 {
+  display: inline;
+  position: absolute;
+}
+
+.create_login {
+  color:white;
+}
