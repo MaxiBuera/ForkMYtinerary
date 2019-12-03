@@ -1,5 +1,6 @@
 import React from 'react';
 import "./LoginComponentStyle.css";
+import { Link } from "react-router-dom";
 
 const LoginComponent = ({
   handleSubmit,
@@ -39,6 +40,11 @@ const LoginComponent = ({
                         <li className="form-row">
                             <button type="submit">Log In</button>
                         </li>
+                        <Link to={`/index`}>
+                            <li className="form-row">
+                                <button type="submit" id="loginButton">Log In With Google!</button>
+                            </li>
+                        </Link>
                     </ul>
                 </form>
             </div>

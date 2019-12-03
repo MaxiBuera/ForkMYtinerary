@@ -118,3 +118,13 @@ body,
 .labLeft {
   text-align: left;
 }
+
+.fav{
+  height: 10%;
+  width: 10%;
+  left: 10%;
+}
+
+.button:focus{
+  background: url('./CityItinerariesComponentImages/fav_on.svg');
+}

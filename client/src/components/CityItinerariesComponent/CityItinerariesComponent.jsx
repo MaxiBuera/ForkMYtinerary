@@ -1,5 +1,7 @@
 import React from "react";
 import gif from "../../assets/loading.gif";
+import fav_off from "./CityItinerariesComponentImages/fav_off.jpg";
+import fav_on from "./CityItinerariesComponentImages/fav_on.svg";
 import "./CityItinerariesComponentStyles.css";
 import { Link } from "react-router-dom";
 import backgroundPrev from "./CityItinerariesComponentImages/pngguru.com.png";
@@ -38,11 +40,14 @@ const CityItinerariesComponent = ({ itineraries, cityData }) => {
                                 "col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
                               }
                             >
-                              <div className={"container2 flexContCol"}>
-                                <img
-                                  className={"profile"}
-                                  src={item.userPhoto}
-                                  alt=""
+                            <div className="">
+                              <img className="fav" src={fav_off} alt="" />                             
+                            </div>
+                            <div className={"container2 flexContCol"}>
+                              <img
+                                className={"profile"}
+                                src={item.userPhoto}
+                                alt=""
                                 />
                                 <div>{item.username}</div>
                               </div>
@@ -54,7 +59,7 @@ const CityItinerariesComponent = ({ itineraries, cityData }) => {
                               }
                             >
                               <div>{item.title}</div>
-
+                              
                               <div>
                                 <div className={"flexContProp"}>
                                   <div className={"align"}>Likes:&nbsp;</div>
