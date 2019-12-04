@@ -15,3 +15,11 @@ export const getItinerariesForACity = (city_name) => dispatch => {
     )
     .catch(err => console.log(err))
 }
+/*
+export const favoriteItineraries = (city_name) => dispatch => {
+    return fetch(`/api/itineraries/${city_name}`, { method: 'PUT' })
+    .then(response => response.json())
+    .then(response => dispatch(fetchItinerariesForACity(response))
+    )
+    .catch(err => console.log(err))
+}*/

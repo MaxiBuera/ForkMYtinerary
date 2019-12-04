@@ -80,7 +80,6 @@ router.get('/test', passport.authenticate('jwt', { session: false }), (req, res)
 }
 );
 
-
 router.get('/auth/google', passport.authenticate('google', { scope: ["profile"] }));
 
   router.get('/auth/google/callback',
@@ -88,5 +87,52 @@ router.get('/auth/google', passport.authenticate('google', { scope: ["profile"] 
   function(req, res) {
       console.log("que paso?")
 });
+
+router.post("/getfavourites", (req, res) => {
+    let user = req.body.user.email;
+    console.log("back", user);
+  
+    User.findOne({ email: user })
+        .then(user => {
+            let itineraries = user.favourite;
+    
+            return itineraries;
+        })
+        .then(itineraries => {
+                Itinerary.find({ _id: { $in: itineraries } })
+                
+                .then(itinerariesFull => {
+                    res.status(200).send(itinerariesFull);
+                    return itinerariesFull;
+            });
+        })
+        .catch(err => {
+            res.status(500).json({
+            error: err
+        });
+    });
+});
+
+/*
+router.post('/addUserFavoriteItinerary', async function (req, res) {
+    try {
+        const user = new User(req.body);
+        await user.save();
+        res.send(user);
+    } catch (e) {
+        res.send(e);
+    }
+});*/
+
+router.put('/:id', async function(req, res){
+    try{
+        const user = await User.findByIdAndUpdate(req.params.id, req.body, {new: true});
+        res.send(user);
+    } catch(e){
+        res.send(e);
+    }
+});
+
+
 
 module.exports = router;

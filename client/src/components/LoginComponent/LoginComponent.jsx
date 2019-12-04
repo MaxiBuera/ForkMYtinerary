@@ -3,11 +3,11 @@ import "./LoginComponentStyle.css";
 import { Link } from "react-router-dom";
 
 const LoginComponent = ({
-  handleSubmit,
-  handleUsername,
-  handlePassword,
-  username,
-  password,
+    handleSubmit,
+    handleUsername,
+    handlePassword,
+    username,
+    password,
 }) => {
     return (
         <div>

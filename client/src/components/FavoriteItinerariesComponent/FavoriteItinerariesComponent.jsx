@@ -1,32 +1,34 @@
 import React, { Component } from "react";
+import fav_off from "../CityItinerariesComponent/CityItinerariesComponentImages/fav_off.jpg";
+import fav_on from "../CityItinerariesComponent/CityItinerariesComponentImages/fav_on.svg";
 
-class FavoriteItinerariesComponent extends Component{
-
-    constructor(props) {
-        super(props);
- 
-       this.state = {
-            image_path: 'your image url here'
-       }
-    }
-
-    render(){
-       
-
-        function ActionLink(){
-            function handleClick(e){
-                e.preventDafualt();
-                console.log("Aver");
-            }
-
-        }
-
-        return(
-            <div>
-
-            </div>
-        );
-    }
+const imagesPath = {
+    on: fav_on,
+    off: fav_off  
 }
+
+class FavoriteItinerariesComponent  extends Component {
+    state = {
+        open: false
+    }
+    toggleImage = () => {
+        this.setState(state => ({ open: !state.open }))
+    }
+    
+    getImageName = () => this.state.open ? 'on' : 'off'
+    
+        render() {
+            const imageName = this.getImageName();
+            return (
+                <div>
+                    <img style={{maxWidth: '50px'}} 
+                        src={imagesPath[imageName]} 
+                        onClick={this.toggleImage} 
+                    />
+                </div>
+            );
+        }
+    }
+
 
 export default FavoriteItinerariesComponent;
