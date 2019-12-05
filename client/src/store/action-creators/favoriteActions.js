@@ -1,4 +1,4 @@
-/*import { GET_FAVOURITES } from "./constants";
+import { GET_FAVOURITES } from "./constants";
 import axios from "axios";
 
 
@@ -52,4 +52,4 @@ export const removeFavourite = (id, user) => dispatch => {
     .catch(error => {
       console.log(error.response);
     });
-};*/
+};

@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router();
 const User = require('../Schemas/User.js')
+const Itinerary = require('../Schemas/Itinerary.js')
 const key = require("../config/config");
 const jwt = require("jsonwebtoken");
 const passport = require('passport');
@@ -88,13 +89,13 @@ router.get('/auth/google', passport.authenticate('google', { scope: ["profile"] 
       console.log("que paso?")
 });
 
-router.post("/getfavourites", (req, res) => {
+router.post("/getfavorites", (req, res) => {
     let user = req.body.user.email;
     console.log("back", user);
   
     User.findOne({ email: user })
         .then(user => {
-            let itineraries = user.favourite;
+            let itineraries = user.itineraryFavorites;
     
             return itineraries;
         })
@@ -113,16 +114,40 @@ router.post("/getfavourites", (req, res) => {
     });
 });
 
-/*
-router.post('/addUserFavoriteItinerary', async function (req, res) {
-    try {
-        const user = new User(req.body);
-        await user.save();
-        res.send(user);
-    } catch (e) {
-        res.send(e);
-    }
-});*/
+router.post("/deleteFavourite", (req, res) => {
+    User.findOneAndUpdate(
+      { email: req.body.user.email },
+      { $pull: { favourite: req.body.id } },
+      { upsert: true }
+    )
+  
+      .then(account => {
+        let favouriteArray = [];
+        let oldArray = user.itineraryFavorites;
+        oldArray.forEach(item => {
+          if (item != req.body.id) {
+            favouriteArray.push(item);
+          }
+        });
+  
+        return favouriteArray;
+      })
+      .then(favouriteArray => {
+        Itinerary.find({ _id: { $in: itineraryFavorites } }).then(itinerariesFull => {
+          res.status(200).send(itinerariesFull);
+          return itinerariesFull;
+        });
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json({
+          error: err
+        });
+      });
+  });
+  
+  module.exports = router;
+
 
 router.put('/:id', async function(req, res){
     try{
@@ -132,7 +157,5 @@ router.put('/:id', async function(req, res){
         res.send(e);
     }
 });
-
-
 
 module.exports = router;

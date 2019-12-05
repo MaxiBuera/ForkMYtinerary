@@ -15,6 +15,7 @@ class CityItinerariesContainer extends Component {
           city_name={this.props.city_name}
           itineraries={this.props.itineraries}
           cityData={this.props.itineraries.singleCityReducer.singleCity}
+          userFavorites={this.props.itineraryFavorites}
         />
       </div>
     );

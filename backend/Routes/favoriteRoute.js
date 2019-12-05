@@ -58,4 +58,19 @@ router.post("/deleteFavourite", (req, res) => {
     });
 });
 
+export const removeFavourite = (id, user) => dispatch => {
+  axios
+    .post("/favourite/deleteFavourite", { id: id, user: user })
+    .then(res => {
+      console.log("this should be the itineraries after deleting", res.data);
+      dispatch({
+        type: GET_FAVOURITES,
+        payload: res.data
+      });
+    })
+    .catch(error => {
+      console.log(error.response);
+    });
+};
+
 module.exports = router;

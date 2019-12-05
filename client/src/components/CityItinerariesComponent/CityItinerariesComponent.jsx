@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import backgroundPrev from "./CityItinerariesComponentImages/pngguru.com.png";
 import backgroundNext from "./CityItinerariesComponentImages/pngguru2.com.png";
 
-const CityItinerariesComponent = ({ itineraries, cityData }) => {
+const CityItinerariesComponent = ({ itineraries, cityData, }) => {
   return (
     <div className={"container2"}>
       {cityData ? (

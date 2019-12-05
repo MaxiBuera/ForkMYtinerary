@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import fav_off from "../CityItinerariesComponent/CityItinerariesComponentImages/fav_off.jpg";
 import fav_on from "../CityItinerariesComponent/CityItinerariesComponentImages/fav_on.svg";
+import { addToFavourites } from "../../store/action-creators/favoriteActions";
 
 const imagesPath = {
     on: fav_on,
