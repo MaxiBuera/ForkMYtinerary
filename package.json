@@ -14,7 +14,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.18.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "mongo-xlsx": "^1.0.12",
     "mongodb": "^3.3.4",
